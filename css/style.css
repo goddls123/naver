@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+
+:root{
+    --main_logo_color: #19ce60;
+    --font_color: rgb(29,29,29);
+    --gray_font_color: rgb(129,129,129);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#header{
+    width: 1150px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 사이드바 시작 */
+#header > .service_area{
+    display: flex;
+    justify-content: flex-end;  
+    margin-top: 0.8rem;
+} 
+#header > .service_area > .start_naver {
+    font-size: 11px;
+    color: var(--font_color);
+    cursor: pointer;
+
+}
+/* section >#header > .service_area > .start_naver:hover{
+    text-decoration-line: underline;
+    text-decoration-thickness: 1.3rem;
+}  */
+
+#header > .service_area .start_naver >span{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    display: inline-block;
+    background-position: -382px -213px;
+    background-size: 440px 410px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    vertical-align: top;
+    margin: -3px 0 0 3px;
+}
+#header > .service_area > a:hover{
+    text-decoration-line: underline;
+}
+
+#header > .service_area span{
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+#header > .service_area> .junior_naver > .ico_jrnaver{
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    width: 60px;
+    height: 10px;
+    background-position: -333px -267px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+}
+#header > .service_area> .junior_naver > .ico_jrnaver:hover{
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    width: 60px;
+    height: 10px;
+    background-position: -257px -280px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+}
+#header > .service_area > .happy_bean > .ico_happybean{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -257px -308px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+
+}
+
+/* service_area end */
+
+/* logo area */
+#header >.logo_area{
+    display: flex;
+    position: relative;
+    height: 100%;
+    margin-top: 3rem;
+
+    /* justify-content: space-between; */
+    /* text-align: center; */
+    /* background-color: rebeccapurple; */
+}
+ #header > .logo_area >.logo_default >.logo_naver >  .logo{
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    width: 222px;
+    height: 52px;
+    background-position: 0 -158px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+}
+
+#header > .logo_area> .search_area{
+    display: flex;
+    /* border: 3px solid black; */
+    position: absolute;
+    top: 60%;
+    left: 268px;
+    margin-top: -28px;
+    
+}
+
+
+#main_search_bar > .green_window {
+    position: relative;
+    width: 582px;
+    height: 52px;
+    border: 2px solid var(--main_logo_color);
+    border-radius: 2px;
+}
+
+ #main_search_bar > .green_window > .input_text {
+    width: 530px;
+    height: 47px;
+    padding: 11px 15px;
+    margin: 1px;
+    background-color: white;
+    color: black;
+    border: 0;
+    border-radius: 0;
+    font-size: 18px;
+    outline: 0;
+}
+
+ #main_search_bar >.green_window > .btn_submit{
+    position: absolute;
+    top: -2px;
+    width: 56px;
+    height: 54px;
+    background-color: #19ce60;
+    height: 52px;
+    border: 2px solid var(--main_logo_color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+#bt_search{
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    width: 22px;
+    height: 22px;
+    background-position: -180px -386px;
+    
+}
+
+#header > .logo_area > .search_area > .btn_keyboard{
+    position: absolute;
+    top: 0;
+    right: 84px;
+    bottom: 0;
+    width: 36px;
+    z-index: 400;
+}
+#header > .logo_area > .search_area > .btn_keyboard > .ico_keyboard{
+    position: relative;
+    top: 38%;
+    left: 25%;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    width: 20px;
+    height: 12px;
+    background-position: -420px -248px;
+    background-repeat: no-repeat;
+    vertical-align: top; 
+    /* margin: -6px 0 0 -10px;*/
+}
+
+#header > .logo_area > .search_area > .btn_arw{
+    position: absolute;
+    top: 0;
+    right: 64px;
+    bottom: 0;
+    width: 22px;
+}
+
+#header > .logo_area > .search_area > .btn_arw > .ico_arr{
+    position: relative;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    width: 10px;
+    height: 5px;
+    background-position: -404px -258px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    top: 50%;
+    left: 50%;
+    margin: -2px 0 0 -5px;
+}
+
+
+/* navigator */
+
+#nav_area{
+    width: 100%;
+    border-top: 1px solid #eee;
+    
+}
+#header > .navigator_bar{
+    position: relative;
+    width: 1130px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
+#header > .navigator_bar > .list_nav_type_fix{
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+#header > .navigator_bar > .list_nav_type_fix > .nav_item > .nav{
+    color: var(--main_logo_color);
+}
+#header > .navigator_bar > .list_nav_type_fix > .nav_item > .nav > .ico_mail{
+    position: relative;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    width: 21px;
+    height: 21px;
+    background-position: -228px -386px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 9px 0 0;
+}
+}
+
