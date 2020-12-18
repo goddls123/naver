@@ -15,9 +15,7 @@
 }
 
 body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+
 }
 
 a{
@@ -26,6 +24,11 @@ a{
 
 ol,ul{
     list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
 .blind {
@@ -38,28 +41,32 @@ ol,ul{
 }
 
 #header{
+    position: relative;
+    background-color: #fff;
+    z-index: 2000;
+}
+
+#header > .container{
     width: 1150px;
+    height: 160px;
     margin: 0 auto;
     position: relative;
 }
 /* 사이드바 시작 */
-#header > .service_area{
-    display: flex;
-    justify-content: flex-end;  
-    margin-top: 0.8rem;
-} 
-#header > .service_area > .start_naver {
+
+ #service_area{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+}  
+#service_area > .start_naver {
     font-size: 11px;
     color: var(--font_color);
     cursor: pointer;
 
-}
-/* section >#header > .service_area > .start_naver:hover{
-    text-decoration-line: underline;
-    text-decoration-thickness: 1.3rem;
-}  */
-
-#header > .service_area .start_naver >span{
+}s
+#service_area .start_naver >span{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     display: inline-block;
     background-position: -382px -213px;
@@ -70,16 +77,16 @@ ol,ul{
     vertical-align: top;
     margin: -3px 0 0 3px;
 }
-#header > .service_area > a:hover{
+#service_area > a:hover{
     text-decoration-line: underline;
 }
 
-#header > .service_area span{
-    margin-right: 0.8rem;
-    margin-left: 0.8rem;
+#service_area span{
+    margin-right: 0.2rem;
+    margin-left: 0.2em;
 }
 
-#header > .service_area> .junior_naver > .ico_jrnaver{
+#service_area> .junior_naver > .ico_jrnaver{
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     background-size: 440px 410px;
@@ -90,7 +97,7 @@ ol,ul{
     vertical-align: top;
     margin: 3px;
 }
-#header > .service_area> .junior_naver > .ico_jrnaver:hover{
+#service_area> .junior_naver > .ico_jrnaver:hover{
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     background-size: 440px 410px;
@@ -101,7 +108,7 @@ ol,ul{
     vertical-align: top;
     margin: 3px;
 }
-#header > .service_area > .happy_bean > .ico_happybean{
+#service_area > .happy_bean > .ico_happybean{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     background-size: 440px 410px;
     display: inline-block;
@@ -117,17 +124,22 @@ ol,ul{
 /* service_area end */
 
 /* logo area */
-#header >.logo_area{
-    display: flex;
+#logo_area{
     position: relative;
     height: 100%;
-    margin-top: 3rem;
 
     /* justify-content: space-between; */
     /* text-align: center; */
     /* background-color: rebeccapurple; */
 }
- #header > .logo_area >.logo_default >.logo_naver >  .logo{
+#logo_area > .logo_default{
+    position: absolute;
+    top: 5%;
+    left: -9px;
+    margin-top: -32px
+}
+
+#logo_area >.logo_default >.logo_naver >  .logo{
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     background-size: 440px 410px;
@@ -136,15 +148,15 @@ ol,ul{
     background-position: 0 -158px;
     background-repeat: no-repeat;
     vertical-align: top;
+    margin-top: 75px;
     content: '';
 }
 
-#header > .logo_area> .search_area{
-    display: flex;
-    /* border: 3px solid black; */
+#logo_area> .search_area{
+    display: inline-block;
     position: absolute;
-    top: 60%;
-    left: 268px;
+    top: 51%;
+    left: 240px;
     margin-top: -28px;
     
 }
@@ -176,6 +188,7 @@ ol,ul{
     top: -2px;
     width: 56px;
     height: 54px;
+    left: 522px;
     background-color: #19ce60;
     height: 52px;
     border: 2px solid var(--main_logo_color);
@@ -192,7 +205,7 @@ ol,ul{
     
 }
 
-#header > .logo_area > .search_area > .btn_keyboard{
+#logo_area > .search_area > .btn_keyboard{
     position: absolute;
     top: 0;
     right: 84px;
@@ -200,7 +213,7 @@ ol,ul{
     width: 36px;
     z-index: 400;
 }
-#header > .logo_area > .search_area > .btn_keyboard > .ico_keyboard{
+#logo_area > .search_area > .btn_keyboard > .ico_keyboard{
     position: relative;
     top: 38%;
     left: 25%;
@@ -215,7 +228,7 @@ ol,ul{
     /* margin: -6px 0 0 -10px;*/
 }
 
-#header > .logo_area > .search_area > .btn_arw{
+#logo_area > .search_area > .btn_arw{
     position: absolute;
     top: 0;
     right: 64px;
@@ -223,7 +236,7 @@ ol,ul{
     width: 22px;
 }
 
-#header > .logo_area > .search_area > .btn_arw > .ico_arr{
+#logo_area > .search_area > .btn_arw > .ico_arr{
     position: relative;
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
@@ -244,26 +257,32 @@ ol,ul{
 #nav_area{
     width: 100%;
     border-top: 1px solid #eee;
-    
+    border-bottom: 1px solid #eee;
+    height: 52px;
 }
-#header > .navigator_bar{
-    position: relative;
+
+#nav_area > .navivator_bar{
     width: 1130px;
-    padding: 0 30px;
     margin: 0 auto;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
 }
 
-#header > .navigator_bar > .list_nav_type_fix{
-    content: "";
-    display: table;
-    table-layout: fixed;
+#nav_area > .navivator_bar > .list_nav_type_fix > .nav_item{
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 52px;
 }
 
-#header > .navigator_bar > .list_nav_type_fix > .nav_item > .nav{
-    color: var(--main_logo_color);
+#nav_area > .navivator_bar > .list_nav_type_fix > .nav_item:first-child {
+    padding-left: 0;
 }
-#header > .navigator_bar > .list_nav_type_fix > .nav_item > .nav > .ico_mail{
+#nav{
+    color:  #03c75a;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+#ico_mail{
     position: relative;
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
@@ -274,6 +293,5 @@ ol,ul{
     background-repeat: no-repeat;
     vertical-align: top;
     margin: 3px 9px 0 0;
-}
 }
 
