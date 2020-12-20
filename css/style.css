@@ -69,7 +69,7 @@ li {
 
 }
 
-#service_area .start_naver >span{
+#service_area .start_naver ::after{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     display: inline-block;
     background-position: -382px -213px;
@@ -77,14 +77,15 @@ li {
     background-repeat: no-repeat;
     width: 26px;
     height: 26px;
+    content: '';
     vertical-align: top;
-    margin: -3px 0 0 0px;
+    margin: -3px 0 0 -2px;
 }
 #so_bar{
     float: left;
     width: 1px;
     height: 10px;
-    margin: 3px 7px;
+    margin: 3px 5px;
     background-color: #e4e8eb;
 }
 #service_area > a:hover{
@@ -412,7 +413,7 @@ li {
     font-size: 13px;
     color: #505050;
 }
-/* #nav_area > .navivator_bar >.keyword_area> .link_keyword > .keyword::after{
+#nav_area > .navivator_bar >.keyword_area> .link_keyword > .keyword::after{
      display: inline-block;
     position: absolute;
     top: 11px;
@@ -423,19 +424,10 @@ li {
     height: 9px;
     background-position: -388px -245px;
     vertical-align: top;
-} */
-#down_arrow{
-    display: inline-block;
-    position: absolute;
-    top: 11px;
-    right: 0;
-    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
-    background-size: 440px 410px;
-    width: 14px;
-    height: 9px;
-    background-position: -388px -245px;
-    vertical-align: top;
+    content: '';
+
 }
+
 #ico_error{
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
