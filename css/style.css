@@ -50,6 +50,7 @@ li {
     width: 1150px;
     height: 160px;
     margin: 0 auto;
+    /* padding: 0 30px; */
     position: relative;
 }
 /* 사이드바 시작 */
@@ -63,9 +64,11 @@ li {
 #service_area > .start_naver {
     font-size: 11px;
     color: var(--font_color);
+    float: left;
     cursor: pointer;
 
-}s
+}
+
 #service_area .start_naver >span{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     display: inline-block;
@@ -75,7 +78,14 @@ li {
     width: 26px;
     height: 26px;
     vertical-align: top;
-    margin: -3px 0 0 3px;
+    margin: -3px 0 0 0px;
+}
+#so_bar{
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background-color: #e4e8eb;
 }
 #service_area > a:hover{
     text-decoration-line: underline;
@@ -88,6 +98,7 @@ li {
 
 #service_area> .junior_naver > .ico_jrnaver{
     display: inline-block;
+    float: left;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     background-size: 440px 410px;
     width: 60px;
@@ -103,7 +114,7 @@ li {
     background-size: 440px 410px;
     width: 60px;
     height: 10px;
-    background-position: -257px -280px;
+    background-position: -257px -296px;
     background-repeat: no-repeat;
     vertical-align: top;
     margin: 3px;
@@ -112,13 +123,25 @@ li {
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     background-size: 440px 410px;
     display: inline-block;
+    float: left;
     width: 34px;
     height: 11px;
     background-position: -257px -308px;
     background-repeat: no-repeat;
     vertical-align: top;
-    margin: 3px 3px 2px;
-
+    margin: 3px 3px 2px 6px;
+}
+#service_area > .happy_bean > .ico_happybean:hover{
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
+    background-size: 440px 410px;
+    display: inline-block;
+    float: left;
+    width: 34px;
+    height: 11px;
+    background-position: -380px -199px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px 6px;
 }
 
 /* service_area end */
