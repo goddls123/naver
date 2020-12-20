@@ -40,10 +40,19 @@ li {
     overflow: hidden;
 }
 
+iframe{
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
 #service_area .start_naver ::after,#service_area> .junior_naver > .ico_jrnaver,#service_area> .junior_naver > .ico_jrnaver:hover,
 #service_area > .happy_bean > .ico_happybean, #service_area > .happy_bean > .ico_happybean:hover , #logo_area >.logo_default >.logo_naver > .logo,
 #bt_search , #logo_area > .search_area > .btn_keyboard > .ico_keyboard ,#logo_area > .search_area > .btn_arw > .ico_arr,
-#ico_mail, #ico_tv, #nav_area > .navivator_bar >.btn_more::after ,#nav_area > .navivator_bar >.keyword_area> .link_keyword > .keyword::after ,#ico_error
+#ico_mail, #ico_tv, #nav_area > .navivator_bar >.btn_more::after ,#nav_area > .navivator_bar >.keyword_area> .link_keyword > .keyword::after ,#ico_error,
+footer >.footer_inner> .notice_area > .link_all::after
  {
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png);
     background-size: 440px 410px;
@@ -412,3 +421,232 @@ li {
     float: left;
     margin: 8px 5px 0 0;
 }
+
+/* main start */
+main{
+    width: 1150px;
+    height: 600px;
+}
+
+/* main end */
+
+/* footer start */
+footer{
+    background-color: #fafbfc ;
+    border-top: 1px solid #e4e8eb;
+}
+
+footer > .footer_inner{
+    width: 1130px;
+    margin: 0 auto;
+    padding: 0 30px 92px;
+}
+
+footer > .footer_inner > .banner_area{
+    padding: 24px 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+footer > .footer_inner > .banner_area>.da_public_left{
+    float: left;
+}
+
+footer > .footer_inner > .banner_area>.da_public_middle{
+    float: left;
+    margin-left: 40px;
+}
+
+footer > .footer_inner > .banner_area>.da_public_right{
+    float: left;
+    margin-left: 40px;
+}
+
+footer > .footer_inner > .notice_area{
+    border-top: 1px solid #e4e8eb;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 15px;
+
+}
+
+ footer >.footer_inner> .notice_area> .notice_box{
+    display: flex;
+    justify-content: space-between;
+} 
+
+footer >.footer_inner> .notice_area> .notice_box > .notice{
+    color: #202020;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 13px;
+}
+footer >.footer_inner> .notice_area> .notice_box > .notice_date{
+    font-size: 11px;
+    color: #202020;
+}
+
+footer >.footer_inner> .notice_area> .notice_box a:hover{
+    text-decoration-line: underline;
+} 
+
+footer >.footer_inner> .notice_area a:hover{
+    text-decoration-line: underline;
+}
+footer >.footer_inner> .notice_area > .link_all{
+    font-weight: 700;
+    font-size: 11px;
+    color: #202020;
+}
+footer >.footer_inner> .notice_area > .link_all::after{
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-position: -408px -110px;
+    background-repeat: no-repeat;
+    content: '';
+    margin-left: 10px;
+    vertical-align: -2px;
+}
+
+footer >.footer_inner >.aside_area{
+    border-top: 1px solid;
+    border-top: 1px solid #e4e8eb;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer >.footer_inner >.aside_area > .partner_box_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 780px;
+    padding: 20px 0;
+}
+footer >.footer_inner >.aside_area > .partner_box_wrap > .partner_box + .partner_box{
+    margin-top: 9px;
+}
+footer >.footer_inner >.aside_area > .partner_box_wrap > .partner_box >.title{
+    font-size: 12px;
+    width: 87px;
+    float: left;
+}
+footer >.footer_inner >.aside_area > .partner_box_wrap > .partner_box a{
+    font-size: 12px;
+    float: left;
+    color: #777;
+}
+footer >.footer_inner >.aside_area > .partner_box_wrap > .partner_box a:hover{
+    text-decoration: underline;
+}
+
+footer >.footer_inner >.aside_area > .partner_box_wrap > .partner_box > .link_partner1::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: #e4e8eb;
+    vertical-align: -1px;
+    margin: 0 8px;
+    float: left;
+} 
+
+footer >.footer_inner >.aside_area >.service_box_wrap{
+    padding: 28px 0;
+    width: 350px;
+    float: right;
+    margin-right: 20px;
+}
+footer >.footer_inner >.aside_area >.service_box_wrap > .service_box{
+    overflow: hidden;
+    float: left;
+    max-width: 150px;
+}
+
+footer >.footer_inner >.aside_area >.service_box_wrap > .service_box +.service_box{
+    margin-left: 50px;
+}
+
+footer >.footer_inner >.aside_area >.service_box_wrap > .service_box >.service_logo{
+    float: right;
+    margin-left: 12px;
+}
+
+footer >.footer_inner >.aside_area >.service_box_wrap > .service_box >.service_info{
+    overflow: hidden;
+}
+
+footer >.footer_inner >.aside_area >.service_box_wrap > .service_box >.service_info > .title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    padding: 2px;
+}
+
+footer >.footer_inner >.aside_area >.service_box_wrap > .service_box >.service_info a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 2px;
+    color: gray;
+}
+footer >.footer_inner >.aside_area >.service_box_wrap > .service_box >.service_info a:hover{
+    text-decoration: underline;
+}
+
+footer >.footer_inner >.corp_area{
+    border-top: 1px solid #e4e8eb;
+    padding-top: 25px;
+}
+
+footer >.footer_inner >.corp_area > .list_corp{
+    float: left;
+    overflow:hidden;
+    margin-right: 13px;
+}
+
+footer >.footer_inner >.corp_area > .list_corp > .corp_item{
+    float:left;
+    color: #777;
+    font-size: 12px;
+}
+footer >.footer_inner >.corp_area > .list_corp > .corp_item a{
+    color: #777;
+}
+footer >.footer_inner >.corp_area > .list_corp > .corp_item a:hover{
+    text-decoration: underline;
+}
+
+footer >.footer_inner >.corp_area > .list_corp > .corp_item + .corp_item::before{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin: 0 8px;
+    background-color: #e4e8eb;
+    vertical-align: -1px;
+}
+footer >.footer_inner >.corp_area > .addr a{
+    float: left;   
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    color: #202020;
+}
+footer >.footer_inner >.corp_area > .addr a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
