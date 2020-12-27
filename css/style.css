@@ -847,6 +847,9 @@ footer >.footer_inner> .notice_area > .link_all::after , #main_left > .news_stan
 #main_left > .main_contents > .theme_cont  .theme_info:hover .theme_title{
     text-decoration: underline;
 }
+#main_left > .main_contents > .theme_cont  .media_info:hover .theme_title{
+    text-decoration: underline;
+}
 #main_left > .main_contents > .theme_cont .topstory_info:hover .theme_title{
     text-decoration: underline;
 }
@@ -1181,6 +1184,36 @@ footer >.footer_inner> .notice_area > .link_all::after , #main_left > .news_stan
 #side_bar > .timesquare .card_wrap{
     position: relative;
 }
+
+#side_bar > .timesquare .card_news{
+    overflow: hidden;
+    display: block;
+    padding: 14px 0 13px 16px;
+    font-size: 12px;
+    font-style: none;
+    color: black;
+}
+
+#side_bar > .timesquare .card_news:hover .news{
+    text-decoration: underline;
+}
+
+#side_bar > .timesquare .card_news .ico_issue{
+    float: left;
+    height: 18px;
+    padding: 0 7px;
+    margin-right: 8px;
+    font-style: normal;
+    border: 1px solid #202020;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #202020;
+    font-weight: 700;
+    vertical-align: top;
+}
+
 #side_bar > .timesquare .card_nav{
     position: absolute;
     top: 11px;
